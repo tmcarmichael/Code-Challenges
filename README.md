@@ -1,1 +1,2 @@
-# Code-Challenges
+## Collection of Code Challenges
+
