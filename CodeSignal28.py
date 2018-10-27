@@ -1,12 +1,10 @@
 def constructSubmatrix(matrix, delRows, delCols):
     for x in delRows:
         matrix = [i for i in matrix if i is not matrix[x]]
-    o = 0
-    for y in matrix:
-        for z in delCols:
-            del y[z-o]
-            o += 1
-        o = 0
+    offset = 0
+    for y in delCols:
+        matrix = [i[:y-offset] + i[y+1-offset:] for i in matrix]
+        offset += 1
     return matrix
 
 """
@@ -36,3 +34,21 @@ delRows = [1]
 delCols = [0, 2]
 if __name__ == '__main__':
     print(constructSubmatrix(matrix, delRows, delCols))
+
+    
+    
+    
+    
+    
+""" attempt 1
+def constructSubmatrix(matrix, delRows, delCols):
+    for x in delRows:
+        matrix = [i for i in matrix if i is not matrix[x]]
+    o = 0
+    for y in matrix:
+        for z in delCols:
+            del y[z-o]
+            o += 1
+        o = 0
+    return matrix
+"""
