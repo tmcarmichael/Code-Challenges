@@ -5,3 +5,5 @@
 [DailyCodingProblem](https://www.dailycodingproblem.com)
 
 [LeetCode](https://leetcode.com/),  [[profile](https://leetcode.com/tcarmic/)]
+
+[CodeWars](https://www.codewars.com/), [profile](https://www.codewars.com/users/ThomasCar)
