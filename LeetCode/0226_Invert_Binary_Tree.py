@@ -2,7 +2,7 @@
 226. Invert Binary Tree
 
 Q: https://leetcode.com/problems/invert-binary-tree/
-A: 
+A: https://leetcode.com/problems/invert-binary-tree/discuss/665457/recursive-python3-and-js-solutions
 """
 
 
