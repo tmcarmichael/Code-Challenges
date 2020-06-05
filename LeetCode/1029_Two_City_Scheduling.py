@@ -6,7 +6,7 @@ Q: https://leetcode.com/problems/two-city-scheduling/
 
 
 class Solution:
-    def twoCitySchedCost(self, costs: List[List[int]]) -> int:
+    def twoCitySchedCost(self, costs):
         res = 0
         l = int(len(costs)/2)
         costs.sort(key=lambda c: c[1] - c[0])
